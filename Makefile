@@ -17,7 +17,7 @@ golangci-lint-install:
 
 .PHONY: lint
 lint: golangci-lint-install
-	$(GOLANGCLILINT) run -v
+	golangci-lint run -v
 
 .PHONY: test
 test:
